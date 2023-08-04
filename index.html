@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Favourite Pet Survey</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Favourite Pet Survey</h1>
+      <p class="description" id="description">This is my first real app!</p>
+    </header>   
+    <form id="survey-form">
+      <div>
+        <label id="name-label" for="name">Name <input id="name" type="text" required placeholder="Enter your name"></label>
+      </div>  
+      <div>
+        <label id="email-label" for="email">Email <input id="email" type="email" required placeholder="Enter your Email"></label>
+      </div> 
+      <div>
+        <label id="number-label" for="number">Age <span class="clue">(optional)</span><input id="number" type="number" placeholder="Age" min="5" max="99"></label>
+      </div>  
+      <div>
+        <p>Which of these animals is your favourite pet?</p>
+        <select id="dropdown">
+          <option disabled selected value>Select an animal</option>
+          <option value="dog">Dog</option>
+          <option value="cat">Cat</option>
+          <option value="fish">Fish</option>
+          <option value="hamster">Hamster</option>
+          <option value="bird">Bird</option>
+        </select>
+      </div>
+      <div>
+        <p>Would your pet make a good friend?</p>
+        <label class="inline" for="definitely">
+          <input class="inline" id="definitely" type="radio" name="radio-button" value="definitely"> Definitely
+        </label>
+        <label class="inline" for="maybe">
+          <input class="inline" id="maybe" type="radio" name="radio-button" value="maybe"> Maybe
+        </label>
+        <label class="inline" for="not-sure">
+          <input class="inline" id="not-sure" type="radio" name="radio-button" value="not-sure"> Not sure
+        </label>
+      </div>
+      <div>  
+        <p>Which of these pets would you own? <span class="clue">(Check all that apply)</span></p>
+        <label class="inline" for="checkbox-1">
+          <input class="inline" id="checkbox-1" type="checkbox" value="dog"> Dog
+        </label>
+        <label class="inline" for="checkbox-2">
+          <input class="inline" id="checkbox-2" type="checkbox" value="cat"> Cat</label>
+        <label class="inline" for="checkbox-3">
+          <input class="inline" id="checkbox-3" type="checkbox" value="fish"> Fish</label>
+        <label class="inline" for="checkbox-4">
+          <input class="inline" id="checkbox-4" type="checkbox" value="hamster"> Hamster</label>
+        <label class="inline" for="checkbox-5">
+          <input class="inline" id="checkbox-5" type="checkbox" value="bird"> Bird</label>
+      </div>
+      <div>    
+        <p>Why would you own or not own these pets?</p>
+        <textarea class="class-textarea" rows="3" cols="30" placeholder="Enter your reasons here..."></textarea>
+      </div>
+      <div>  
+        <input type="submit" id="submit">
+      </div>    
+    </form>
+  </body>
+</html>
